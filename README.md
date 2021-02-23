@@ -1,6 +1,6 @@
 # Ice Cold
 
-> :warning: This is a development version. Dont use this theme for the production!
+> :warning: This is a development version. Dont use this git clone repository for the production! Use the releases on the right side oder tab or use the wordpress theme place for the production.
 
 <p align="center">
     <img src="screenshot.png" width="550">
