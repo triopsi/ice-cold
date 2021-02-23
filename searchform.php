@@ -37,7 +37,7 @@
 	<label for="<?php echo esc_attr( $unique_id ); ?>">
 		<span class="screen-reader-text"><?php echo esc_html_x( 'Search for:', 'label', 'ice-cold' ); ?></span>
 	</label>
-	<input type="search" id="<?php echo esc_attr( $unique_id ); ?>" class="form-control search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'ice-cold' ); ?>" value="<?php echo get_search_query(); ?>" name="s" aria-describedby="button-addon2" />
+	<input type="search" id="<?php echo esc_attr( $unique_id ); ?>" class="form-control search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'ice-cold' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" aria-describedby="button-addon2" />
 	<div class="input-group-append">
 		<button class="btn btn-outline-secondary widget-search-button" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
 	</div>

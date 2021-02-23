@@ -80,7 +80,7 @@ function wpicecold_get_breadcrumb() {
 
 				if ( ! $this_cat->parent ) :
 					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo get_category_parents( $parent_cat, true, '' ) . $defaults['delimiter'] . '';
+					echo esc_html( get_category_parents( $parent_cat, true, '' ) . $defaults['delimiter'] . '' );
 				endif;
 
 				// get category link.
@@ -131,7 +131,7 @@ function wpicecold_get_breadcrumb() {
 					$cat = $cat[0];
 
 					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' );
+					echo esc_html( get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' ) );
 
 					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					echo $defaults['before'] . esc_html( get_the_title() ) . $defaults['after'];
@@ -153,7 +153,7 @@ function wpicecold_get_breadcrumb() {
 				$cat = $cat[0];
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' );
+				echo esc_html( get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' ) );
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				echo '<a href="' . get_permalink( $parent ) . '">' . $parent->post_title . '</a>' . $defaults['delimiter'] . '';

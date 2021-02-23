@@ -11,7 +11,7 @@ Theme:             | Ice Cold
 -------------------|----------------
 Contributors:      | [triopsi](https://profiles.wordpress.org/triopsi/)
 Donate link:       | :heart: [PayPal Donate](https://www.paypal.me/triopsi) 
-Version:           | [![Version](https://img.shields.io/badge/Version-1.0-brightgreen)](https://www.gnu.org/licenses/license-list.html#GPLv2)
+Version:           | [![Version](https://img.shields.io/badge/Version-1.0.1-brightgreen)](https://www.gnu.org/licenses/license-list.html#GPLv2)
 Requires at least: | 5.3
 Tested up to:      | 5.6.1
 Requires PHP:	   | 5.6
@@ -104,6 +104,11 @@ Supports Contact Form 7.
 Developed by [Triopsi](https://wiki.profoxi.de)
 
 # Changelog 
+
+## 1.0.1
+
+* FIXED EscHtml for breadcrumb
+* FIXED EscHtml for searchform
 
 ## 1.0
 
