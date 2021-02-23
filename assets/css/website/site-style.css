@@ -92,7 +92,7 @@ body{
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
-.has-header-image:not(.wpicecold-front-page)  .custom-header-media img{
+.has-header-image .custom-header-media img{
     height: 250px;
     left: 0;
     -o-object-fit: cover;
@@ -105,17 +105,8 @@ body{
     width: 100%;
 }
 
-.has-header-image .custom-header-media img{
+.wpicecold-front-image-full-size.has-header-image .custom-header-media img{
     height: 100%;
-    left: 0;
-    -o-object-fit: cover;
-    object-fit: cover;
-    top: 0;
-    -ms-transform: none;
-    -moz-transform: none;
-    -webkit-transform: none;
-    transform: none;
-    width: 100%;
 }
 
 .site-branding {
@@ -166,7 +157,7 @@ body{
 
 @media (max-width: 991.98px) {
 
-    .has-header-image:not(.wpicecold-front-page) .custom-header-media img {
+    .has-header-image:not(.wpicecold-front-page):not(.wpicecold-front-page-blog) .custom-header-media img {
         height: auto;
     }
 }

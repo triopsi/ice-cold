@@ -585,6 +585,16 @@ function wpicecold_body_classes( $classes ) {
 		$classes[] = 'wpicecold-front-page';
 	}
 
+	// Add class on front page blog.
+	if ( is_home() && is_front_page() ) {
+		$classes[] = 'wpicecold-front-page-blog';
+	}
+
+	// Add class for full image size.
+	if ( get_theme_mod( 'header_size_full_front', false ) ) {
+		$classes[] = 'wpicecold-front-image-full-size';
+	}
+
 	// Add a class if there is a custom header.
 	if ( has_header_image() ) {
 		$classes[] = 'has-header-image';
@@ -637,11 +647,20 @@ function wpicecold_scripts() {
 		wp_enqueue_script( 'wpicecold-page-loader-js', get_theme_file_uri( '/assets/js/page-loader.min.js' ), array(), '1.0.0', true );
 
 	}
+
 	// Add Front Page JS.
 	if ( is_front_page() ) {
 
 		// Add to the section with smoothing scroll.
 		wp_enqueue_script( 'wpicecold-smoothscroll-js', get_theme_file_uri( '/assets/js/smooth_scroll.min.js' ), array( 'jquery' ), '1.0.0', true );
+
+	}
+
+	// Add JS to the frontpage for wide image.
+	if ( get_theme_mod( 'header_size_full_front', false ) && is_front_page() ) {
+
+		// Add to the section with smoothing scroll.
+		wp_enqueue_script( 'wpicecold-front-page-media-js', get_theme_file_uri( '/assets/js/front-page-media.min.js' ), array( 'jquery' ), '1.0.0', true );
 
 	}
 

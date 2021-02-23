@@ -13,7 +13,8 @@ gulp.task('minifyjs', function() {
         'assets/js/page-loader.js',
         'assets/js/smooth_scroll.js',
         'assets/js/to_the_top.js',
-        'assets/js/navigation.js'
+        'assets/js/navigation.js',
+        'assets/js/front-page-media.js'
     ] )
 		.pipe( uglify() )
 		.pipe( rename( { suffix: '.min' } ) )
@@ -38,7 +39,7 @@ gulp.task('minifyfont', function() {
 gulp.task('watch', function(){
     gulp.watch('assets/css/website/site-style.css', gulp.series('minifysite')); 
     gulp.watch('assets/css/font-awesome/all.css', gulp.series('minifyfont')); 
-    gulp.watch(['assets/js/page-loader.js','assets/js/smooth_scroll.js','assets/js/to_the_top.js','assets/js/navigation.js'], gulp.series('minifyjs')); 
+    gulp.watch(['assets/js/page-loader.js','assets/js/smooth_scroll.js','assets/js/to_the_top.js','assets/js/navigation.js','assets/js/front-page-media.js'], gulp.series('minifyjs')); 
 })
 
 // minify all js and css Task

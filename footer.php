@@ -64,17 +64,5 @@
 <a href="#" class="up_scrollup" style="display: hidden;"><i class="fa fa-chevron-up"></i></a>
 <!-- End: To the top -->
 <?php wp_footer(); ?>
-<script>
-	<?php if ( get_theme_mod( 'header_size_full_front', false ) && is_front_page() ) : ?>
-		jQuery(function() {
-			var windowsSize = jQuery(window).height();
-			var sidebarTopSize = jQuery( '.sidebar-top' ).height() || 0; 
-			var navBarSize = jQuery( '.navbar-main' ).height();
-			if (!window.matchMedia("(max-width: 767px)").matches){
-				jQuery(".custom-header").css("height",(windowsSize-(navBarSize+sidebarTopSize+20 ) ));
-			}
-		});
-	<?php endif; ?>
-</script>
 </body>
 </html>
