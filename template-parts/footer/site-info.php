@@ -36,24 +36,21 @@ $widget_active = ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer
 		the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 	}
 	?>
-	B: BUILD_NUMBER
-	<span role="separator" aria-hidden="true"></span>
 	<i class="fas fa-heart"></i> 
 	<?php
-	printf(
-		/* translators: %s: Theme URL. */
-		esc_html__(
-			'Proudly powered by %s',
-			'ice-cold'
-		),
-		'<a href="https://wiki.profoxi.de/">triopsi</a>'
-	);
+		/* translators: %s: CMS name, i.e. WordPress. */
+		printf( esc_html__( 'Proudly powered by %s', 'ice-cold' ), 'WordPress' );
+	?>
+	<span role="separator" aria-hidden="true"></span>
+	<?php
+		/* translators: 1: Theme name, 2: Theme author. */
+		printf( esc_html__( 'Theme: %1$s by %2$s.', 'ice-cold' ), 'Ice Cold', '<a href="https://www.wiki.profoxi.de/">Triopsi</a>' );
 	?>
 	</small>
 	<p>
 	&copy; 2020-<?php echo gmdate( 'Y' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> <?php echo bloginfo( 'name' ); ?> – 
 	<?php
-	echo esc_html__( 'Copyright All Rights Reserved', 'ice-cold' );
+		echo esc_html__( 'Copyright All Rights Reserved', 'ice-cold' );
 	?>
 	</p>
 </div><!-- /.site-info -->
