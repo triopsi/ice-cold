@@ -18,8 +18,10 @@ Requires PHP:	   | 5.6
 License:           | [![GPLv2 or later](https://img.shields.io/badge/Licence-GPLv2_or_later-f39f37)](https://www.gnu.org/licenses/license-list.html#GPLv2)
 License URI:       | https://www.gnu.org/licenses/license-list.html#GPLv2
 Tags:              | one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio
-Status             | [![Build Status](https://jenkins.cloudfoxi.de/buildStatus/icon?job=Deploy-Ice-Cold)](https://jenkins.cloudfoxi.de/job/Deploy-Ice-Cold/)
-
+Status             | [![Build Status](https://jenkins.cloudfoxi.de/buildStatus/icon?job=Deploy-Ice-Cold-Theme)](https://jenkins.cloudfoxi.de/job/Deploy-Ice-Cold-Theme/)
+Checks              |[![Required](https://img.shields.io/badge/WPThemeReview-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Core](https://img.shields.io/badge/WordPress_Core-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Extra](https://img.shields.io/badge/WordPress_Extra-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Docs](https://img.shields.io/badge/WordPress_Docs-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/)
+Size | [![Repo Size](https://img.shields.io/github/repo-size/triopsi/ice-cold)]()
+Last Update | [![Last Commit](https://img.shields.io/github/last-commit/triopsi/ice-cold)]()
 
 
 # Description
