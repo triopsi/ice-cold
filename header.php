@@ -44,7 +44,7 @@ wp_head();
 </head>
 <body <?php body_class(); ?>>
 <?php
-if ( get_theme_mod( 'loader_page_jquery' ) === 'yes' ) : 
+if ( get_theme_mod( 'loader_page_jquery' ) === 'yes' ) :
 	?>
 	<!-- Preloader -->
 		<div class="preloader">

@@ -24,7 +24,7 @@ Status             | [![Build Status](https://jenkins.cloudfoxi.de/buildStatus/i
 
 # Description
 
-A simple WordPress Theme. This Theme are full responsive and are maked with the popular Bootstrap library. Flexible sidebars and footers. Perfect for a blog, portfolio or a frontpage. With parallax effects on frontpage.
+A simple WordPress Theme. This Theme are full responsive and are maked with the popular Bootstrap library. Flexible sidebars and footers. Perfect for a blog, portfolio or a frontpage. With parallax effects on frontpage.This theme support WooCommerce.
 
 # Installation theme
 
