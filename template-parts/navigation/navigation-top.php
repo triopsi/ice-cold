@@ -54,7 +54,7 @@ switch ( get_theme_mod( 'colorscheme', 'white' ) ) {
 			$logo_nav = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 			?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img src="<?php echo esc_url( $logo_nav[0] ); ?>" class="d-inline-block align-top brand-logo" alt="<?php echo esc_html( bloginfo( 'name' ) . ' - ' . get_bloginfo( 'description', 'display' ) ); ?>">
+				<img src="<?php echo esc_url( $logo_nav[0] ); ?>" class="d-inline-block align-top brand-logo" alt="<?php echo esc_attr( bloginfo( 'name' ) . ' - ' . get_bloginfo( 'description', 'display' ) ); ?>">
 			</a>
 			<?php
 		} else {
