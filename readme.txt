@@ -2,6 +2,7 @@
 Contributors: triopsi
 Donate link: https://www.paypal.me/triopsi
 Tested up to: 5.6.1
+Requires at least: 4.7
 Requires PHP: 5.6
 Version: 1.0.2
 Stable tag: 1.0.2
