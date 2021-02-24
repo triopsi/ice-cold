@@ -43,7 +43,7 @@ function wpicecold_upgrade_notice() {
 
 	$message = sprintf(
 		/* translators: %s: WordPress Version. */
-		esc_html__( 'This theme requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
+		esc_html__( 'This theme requires at least WordPress version 5.0. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
 		esc_html( $GLOBALS['wp_version'] )
 	);
 
@@ -61,7 +61,7 @@ function wpicecold_customize() {
 	wp_die(
 		sprintf(
 			/* translators: %s: WordPress Version. */
-			esc_html__( 'wpicecold requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
+			esc_html__( 'wpicecold requires at least WordPress version 5.0. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
 			esc_html( $GLOBALS['wp_version'] )
 		),
 		'',
@@ -81,7 +81,7 @@ function wpicecold_preview() {
 		wp_die(
 			sprintf(
 				/* translators: %s: WordPress Version. */
-				esc_html__( 'wpicecold requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
+				esc_html__( 'wpicecold requires at least WordPress version 5.0. You are running version %s. Please upgrade and try again.', 'ice-cold' ),
 				esc_html( $GLOBALS['wp_version'] )
 			)
 		);

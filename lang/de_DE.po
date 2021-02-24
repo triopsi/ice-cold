@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-02-17T13:31:06+01:00\n"
-"PO-Revision-Date: 2021-02-23 12:46+0100\n"
+"PO-Revision-Date: 2021-02-24 08:14+0100\n"
 "X-Generator: Poedit 2.3.1\n"
 "X-Domain: ice-cold\n"
 "Last-Translator: \n"
@@ -174,10 +174,10 @@ msgstr "Zum Inhalt springen"
 #. translators: %s: WordPress Version.
 #: inc/back-compat.php:38 inc/back-compat.php:55 inc/back-compat.php:74
 msgid ""
-"This theme  requires at least WordPress version 4.7. You are running version %s. Please upgrade and try "
+"This theme  requires at least WordPress version 5.0. You are running version %s. Please upgrade and try "
 "again."
 msgstr ""
-"Dieses Theme benötigt mindestens WordPress Version 4.7. Sie führen die Version% s aus. Bitte "
+"Dieses Theme benötigt mindestens WordPress Version 5.0. Sie führen die Version% s aus. Bitte "
 "aktualisieren Sie und versuchen Sie es erneut."
 
 #: inc/breadcrumb-function.php:49

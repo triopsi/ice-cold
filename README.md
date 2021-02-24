@@ -108,6 +108,9 @@ Developed by [Triopsi](https://wiki.profoxi.de)
 ## 1.0.2
 
 * Add copyright licence in the readme.txt
+* Fixed reamde.txt and style.css comments
+* Fix esc attributs
+* Fix least wordpress 5.0
 
 ## 1.0.1
 

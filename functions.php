@@ -30,9 +30,9 @@
  */
 
 /**
- * Ice-Cold only works in WordPress 4.7 or later.
+ * Ice-Cold only works in WordPress 5.0 or later.
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }

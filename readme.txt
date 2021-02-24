@@ -2,7 +2,7 @@
 Contributors: triopsi
 Donate link: https://www.paypal.me/triopsi
 Tested up to: 5.6.1
-Requires at least: 4.7
+Requires at least: 5.0
 Requires PHP: 5.6
 Version: 1.0.2
 Stable tag: 1.0.2
@@ -46,6 +46,9 @@ Developed by [Triopsi](https://wiki.profoxi.de)
 = 1.0.2 =
 
 * Add copyright licence in the readme.txt
+* Fixed reamde.txt and style.css comments
+* Fix esc attributs
+* Fix least wordpress 5.0
 
 = 1.0.1 =
 
