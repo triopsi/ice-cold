@@ -3,10 +3,10 @@ Contributors: triopsi
 Donate link: https://www.paypal.me/triopsi
 Tested up to: 5.6.1
 Requires PHP: 5.6
-Version: 1.0.1
+Version: 1.0.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/license-list.html#GPLv2
-Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio, e-commerce
 
 == Description ==
 
@@ -41,6 +41,10 @@ Developed by [Triopsi](https://wiki.profoxi.de)
 
 == Changelog ==
 
+= 1.0.2 =
+
+* Add copyright licence in the readme.txt
+
 = 1.0.1 =
 
 * FIXED EscHtml for breadcrumb
@@ -59,6 +63,19 @@ Nothing yet.
 If you like the plugin, consider a donation to support further development. [Click here](https://www.paypal.me/triopsi)
 
 == Copyright & License Notes ==
+
+Ice Cold WordPress Theme, Copyright 2020 Triopsi
+Ice Cold is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
 === Resources ===
 * Bootstrap
