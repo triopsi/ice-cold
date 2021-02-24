@@ -105,6 +105,10 @@ Developed by [Triopsi](https://wiki.profoxi.de)
 
 # Changelog 
 
+## 1.0.3
+
+* Fix title on all pages 
+
 ## 1.0.2
 
 * Add copyright licence in the readme.txt

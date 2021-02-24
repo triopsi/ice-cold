@@ -40,8 +40,6 @@
 	}
 	?>
 	</div>
-	<?php if ( is_front_page() ) : ?>
-		<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
-	<?php endif; ?>
+	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 </div>
 <!-- /.custom-header -->

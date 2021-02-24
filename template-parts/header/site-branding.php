@@ -47,6 +47,9 @@
 					<h1><?php single_post_title(); ?></h1>
 				<?php elseif ( is_archive() ) : ?>
 					<h1><?php the_archive_title(); ?></h1>
+				<?php else : ?>
+					<h1><?php esc_html( bloginfo( 'name' ) ); ?></h1>
+					<p class="site-description text-white"><?php echo esc_html( get_bloginfo( 'description', 'display' ) ); ?></p>
 				<?php endif; ?>
 			</div><!-- /.site-branding-text -->
 		</div>
