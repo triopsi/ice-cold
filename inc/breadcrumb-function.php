@@ -43,7 +43,7 @@ function wpicecold_get_breadcrumb() {
 	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	$defaults['after'] = '';
 
-	if ( storefront_is_woocommerce_activated() ) {
+	if ( wpicecold_is_woocommerce_activated() ) {
 
 		woocommerce_breadcrumb( $defaults );
 

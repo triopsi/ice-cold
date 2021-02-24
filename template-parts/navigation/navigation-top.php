@@ -89,8 +89,8 @@ switch ( get_theme_mod( 'colorscheme', 'white' ) ) {
 		</div>
 		<?php
 		// add cart link and symbol.
-		if ( storefront_is_woocommerce_activated() ) {
-			storefront_cart_link();
+		if ( wpicecold_is_woocommerce_activated() ) {
+			wpicecold_cart_link();
 		}
 		?>
 	</div><!-- Container END -->

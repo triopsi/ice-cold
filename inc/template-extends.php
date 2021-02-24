@@ -25,51 +25,49 @@
  * @version 1.0.0
  */
 
-if ( ! function_exists( 'wpicecold_entry_footer' ) ) :
+/**
+ * Prints HTML with meta information for the categories, tags and comments.
+ *
+ * @return void
+ */
+function wpicecold_entry_footer() {
 
-	/**
-	 * Prints HTML with meta information for the categories, tags and comments.
-	 *
-	 * @return void
-	 */
-	function wpicecold_entry_footer() {
+	/* translators: used between list items, there is a space after the comma. */
+	$categories_list = get_the_category_list( __( ', ', 'ice-cold' ) );
 
-		/* translators: used between list items, there is a space after the comma. */
-		$categories_list = get_the_category_list( __( ', ', 'ice-cold' ) );
+	// Get Tags for posts.
+	/* translators: used between list items, there is a space after the comma. */
+	$tags_list = get_the_tag_list( '', __( ', ', 'ice-cold' ) );
 
-		// Get Tags for posts.
-		/* translators: used between list items, there is a space after the comma. */
-		$tags_list = get_the_tag_list( '', __( ', ', 'ice-cold' ) );
+	// We don't want to output .entry-footer if it will be empty, so make sure its not.
+	// phpcs:ignore WordPress.Security.EscapeOutput
+	if ( ( ( wpicecold_categorized_blog() && $categories_list ) || $tags_list ) || get_edit_post_link() ) {
 
-		// We don't want to output .entry-footer if it will be empty, so make sure its not.
-		// phpcs:ignore WordPress.Security.EscapeOutput
-		if ( ( ( wpicecold_categorized_blog() && $categories_list ) || $tags_list ) || get_edit_post_link() ) {
+		echo '<footer class="entry-footer">';
 
-			echo '<footer class="entry-footer">';
-			if ( 'post' === get_post_type() ) {
+		if ( 'post' === get_post_type() ) {
+
+			// phpcs:ignore WordPress.Security.EscapeOutput
+			if ( ( $categories_list && wpicecold_categorized_blog() ) || $tags_list ) {
+				echo '<span class="cat-tags-links">';
+
 				// phpcs:ignore WordPress.Security.EscapeOutput
-				if ( ( $categories_list && wpicecold_categorized_blog() ) || $tags_list ) {
-					echo '<span class="cat-tags-links">';
-
+				if ( $categories_list && wpicecold_categorized_blog() ) {
 					// phpcs:ignore WordPress.Security.EscapeOutput
-					if ( $categories_list && wpicecold_categorized_blog() ) {
-						// phpcs:ignore WordPress.Security.EscapeOutput
-						echo '<span class="cat-links"><i class="fas fa-folder"></i> <span class="screen-reader-text">' . esc_html__( 'Categories', 'ice-cold' ) . '</span>' . $categories_list . '</span>';
-					}
-
-					// phpcs:ignore WordPress.Security.EscapeOutput
-					if ( $tags_list && ! is_wp_error( $tags_list ) ) {
-						// phpcs:ignore WordPress.Security.EscapeOutput
-						echo '<span class="tags-links"><i class="fas fa-hashtag"></i> <span class="screen-reader-text">' . esc_html__( 'Tags', 'ice-cold' ) . '</span>' . $tags_list . '</span>';
-					}
-
-					echo '</span>';
+					echo '<span class="cat-links"><i class="fas fa-folder"></i> <span class="screen-reader-text">' . esc_html__( 'Categories', 'ice-cold' ) . '</span>' . $categories_list . '</span>';
 				}
+
+				// phpcs:ignore WordPress.Security.EscapeOutput
+				if ( $tags_list && ! is_wp_error( $tags_list ) ) {
+					// phpcs:ignore WordPress.Security.EscapeOutput
+					echo '<span class="tags-links"><i class="fas fa-hashtag"></i> <span class="screen-reader-text">' . esc_html__( 'Tags', 'ice-cold' ) . '</span>' . $tags_list . '</span>';
+				}
+				echo '</span>';
 			}
-			echo '</footer> <!-- .entry-footer -->';
 		}
+		echo '</footer> <!-- .entry-footer -->';
 	}
-endif;
+}
 
 /**
  * Returns true if a blog has more than 1 category.
