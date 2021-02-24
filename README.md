@@ -11,7 +11,7 @@ Theme:             | Ice Cold
 -------------------|----------------
 Contributors:      | [triopsi](https://profiles.wordpress.org/triopsi/)
 Donate link:       | :heart: [PayPal Donate](https://www.paypal.me/triopsi) 
-Version:           | [![Version](https://img.shields.io/badge/Version-1.0.2-brightgreen)](https://www.gnu.org/licenses/license-list.html#GPLv2)
+Version:           | [![Version](https://img.shields.io/github/v/release/triopsi/ice-cold)](https://github.com/triopsi/ice-cold/releases)
 Requires at least: | 5.3
 Tested up to:      | 5.6.1
 Requires PHP:	   | 5.6
