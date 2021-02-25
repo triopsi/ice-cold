@@ -1,31 +1,37 @@
 {
   "name": "wpicecold",
+  "slug": "ice-cold",
+  "textdomain": "ice-cold",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triopsi/ice-cold-wp-theme.git"
+  },
+  "theme_uri": "https://github.com/triopsi/ice-cold",
+  "author": "",
+  "author_uri": "https://wiki.profoxi.de",
+  "license": "ISC",
   "version": "1.0.0",
   "description": "Eine einfache und responsive Mastervorlage für schlanke designs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/triopsi/ice-cold-wp-theme.git"
-  },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/triopsi/ice-cold-wp-theme/issues"
   },
   "homepage": "https://github.com/triopsi/ice-cold-wp-theme#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
     "clean-css": "^5.0.1",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.2"
   },
   "dependencies": {
-    "chokidar": "^3.5.1"
+    "chokidar": "^3.5.1",
+    "gulp-copy": "^4.0.1"
   }
 }
