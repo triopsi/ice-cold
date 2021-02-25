@@ -1,2 +1,4 @@
-bootstrap/*
+bootstrap.js
+bootstrap.min.js
 *.min.js
+gulpfile.js
