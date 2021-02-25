@@ -8,7 +8,7 @@
         //scroll smooth on anchor
         $('a[href^="#"]').on('click',function(e) {
 
-            if ( ! $(this).hasClass("up_scrollup") ) {
+            if ( ! $(this).hasClass( 'up_scrollup' ) ) {
 
                 e.preventDefault();
 

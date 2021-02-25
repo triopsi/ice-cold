@@ -12,5 +12,4 @@
 	if ( ! window.matchMedia( '(max-width: 767px)' ).matches ){
 		$( '.custom-header' ).css( 'height', ( windowsSize - ( navBarSize + sidebarTopSize + sidebarAdminSize + defaultOffset ) ) );
 	}
-
 })( window.jQuery );

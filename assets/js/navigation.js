@@ -4,7 +4,7 @@
  */
 ( function( $ ) {
 	
-	"use strict";
+	'use strict';
 
     // add submenu dropdown Toggle button.
     if( $( '.main-menu li.menu-item-has-children ul' ).length ){
@@ -41,7 +41,7 @@
     $(document).ready(function () {
 
         // check size on resize the window.
-        $(window).on('resize', function (e) {
+        $(window).on('resize', function () {
             checkScreenSize();
         });
     

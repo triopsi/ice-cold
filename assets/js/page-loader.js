@@ -6,8 +6,8 @@
     $( document ).ready(function() {
 
         //prelaoder fadeout on ready
-        $(".status").fadeOut();
-        $(".preloader").delay(1000).fadeOut("slow");
+        $( '.status' ).fadeOut();
+        $( '.preloader' ).delay(1000).fadeOut( 'slow' );
 
     });
 

@@ -25,13 +25,12 @@ var scriptsjs = [
     smoothscrollerjs,
     tothetopjs,
     navigationjs,
-    frontpagemediajs,
+    frontpagemediajs
 ];
 
 // Build files.
 var buildFiles         = ['./**', '!node_modules/**', '!dist/', '!.vscode/', '!vendor/', '!demo/**', '!composer.json', '!composer.lock', '!.gitattributes', '!phpcs.xml', '!package.json', '!package-lock.json', '!gulpfile.js', '!LICENSE', '!README.md', '!assets/scss/**' ];
 var buildDestination   = './dist/'+slug+'/';
-var distributionFiles  = './dist/'+slug+'/**/*';
 var buildArtefact      = slug + '.zip';
 
 
@@ -44,11 +43,19 @@ var zip      = require( 'gulp-zip' );
 var cleaner  = require( 'gulp-clean' );
 var copy     = require( 'gulp-copy' );
 var notify   = require( 'gulp-notify' );
+var jshint   = require( 'gulp-jshint' );
 
 
 /**
  * Dev Tasks
  */
+// JS lint
+gulp.task('jslint', function() {
+    return gulp.src( scriptsjs )
+      .pipe( jshint() )
+      .pipe( jshint.reporter( 'default' ) );
+});
+
 // Minify Styles
 gulp.task( 'minifycss', function () {
     return gulp.src( sitestylecss )
