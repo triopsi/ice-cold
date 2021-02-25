@@ -78,10 +78,7 @@ In this projetct you can use the follow gul task
 gulp minifyjs
 
 # Minify CSS (site-style.css)
-gulp minifysite
-
-# Minify Font Awesome
-gulp minifyfont
+gulp minifycss
 
 # Minify all js, all css
 gulp all
@@ -91,17 +88,33 @@ gulp default
 
 # Watch on Changse and minify that(site-style.css,Ftont and JS)
 gulp watch
+
+# Create a zip file of your project
+gulp build
+
+# ... more tast in the gulpfile
 ```
 
 # Frequently Asked Questions
 
 ## Does this theme support any plugins?
 
-Supports Contact Form 7.
+* Supports Contact Form 7
+* WooCommerce
 
 # Credits
 
 Developed by [Triopsi](https://wiki.profoxi.de)
+
+# Contributions
+
+Anyone is welcome to contribute to ice-cold theme.
+
+There are various ways you can contribute:
+
+1. Create an [Issue](https://github.com/triopsi/ice-cold/issues) on GitHub
+2. Send a Pull Request with your bug fixes and/or new features
+3. Provide feedback and suggestions on enhancements
 
 # Changelog 
 
