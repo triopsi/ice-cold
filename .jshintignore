@@ -1,4 +1,3 @@
-bootstrap.js
-bootstrap.min.js
-*.min.js
+assets/js/bootstrap/*
 gulpfile.js
+assets/js/*.min.js
