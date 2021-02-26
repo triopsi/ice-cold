@@ -215,3 +215,7 @@ GNU General Public License for more details.
 * Name: loader-blue.gif
   * self-made picture by @triopsi
   * License: CC0 1.0 Universal (CC0 1.0)
+
+* Name: grid-mask.png
+  * self-made picture by @triopsi
+  * License: CC0 1.0 Universal (CC0 1.0)
