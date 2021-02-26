@@ -121,6 +121,7 @@ There are various ways you can contribute:
 ## 1.0.4
 
 * Fix readme and style.css head
+* Fix header.php pings
 
 ## 1.0.3
 
