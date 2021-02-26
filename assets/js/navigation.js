@@ -4,7 +4,7 @@
  */
 ( function( $ ) {
 	
-	"use strict";
+	'use strict';
 
     // add submenu dropdown Toggle button.
     if( $( '.main-menu li.menu-item-has-children ul' ).length ){
