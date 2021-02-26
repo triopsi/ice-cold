@@ -118,6 +118,10 @@ There are various ways you can contribute:
 
 # Changelog 
 
+## 1.0.4
+
+* Fix readme and style.css head
+
 ## 1.0.3
 
 * Fix title on all pages 

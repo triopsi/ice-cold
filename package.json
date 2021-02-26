@@ -10,7 +10,7 @@
   "author": "",
   "author_uri": "https://wiki.profoxi.de",
   "license": "ISC",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Eine einfache und responsive Mastervorlage für schlanke designs.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "gulp-jshint": "^2.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^2.0.0",
+    "gulp-replace-task": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.2",
     "jshint": "^2.12.0"

@@ -8,6 +8,11 @@ var project = pkg.name;
 var slug    = pkg.slug;
 var version = pkg.version;
 
+// Version File
+var filesversions = [
+    'style.css',
+    'readme.txt'
+];
 
 // Styles
 var sitestylecss     = 'assets/css/website/site-style.css';
@@ -20,7 +25,7 @@ var tothetopjs       = 'assets/js/to_the_top.js';
 var navigationjs     = 'assets/js/navigation.js';
 var frontpagemediajs = 'assets/js/front-page-media.js';
 var jsdestination    = 'assets/js';
-var scriptsjs = [
+var scriptsjs        = [
     pageloaderjs,
     smoothscrollerjs,
     tothetopjs,
@@ -29,8 +34,23 @@ var scriptsjs = [
 ];
 
 // Build files.
-var buildFiles         = ['./**', '!node_modules/**', '!dist/', '!.vscode/', '!vendor/', '!demo/**', '!composer.json', '!composer.lock', '!.gitattributes', '!phpcs.xml', '!package.json', '!package-lock.json', '!gulpfile.js', '!LICENSE', '!README.md', '!assets/scss/**' ];
-var buildDestination   = './dist/'+slug+'/';
+var buildFiles         = [
+    './**',
+    '!node_modules/**',
+    '!dist/',
+    '!.vscode/',
+    '!vendor/',
+    '!composer.json',
+    '!composer.lock',
+    '!package.json',
+    '!package-lock.json',
+    '!gulpfile.js',
+    '!LICENSE',
+    '!README.md',
+    '!.jshintignore',
+    '!.jshintrc'
+];
+var buildDestination   = './dist/' + slug + '/';
 var buildArtefact      = slug + '.zip';
 
 
@@ -44,11 +64,32 @@ var cleaner  = require( 'gulp-clean' );
 var copy     = require( 'gulp-copy' );
 var notify   = require( 'gulp-notify' );
 var jshint   = require( 'gulp-jshint' );
+var replace  = require( 'gulp-replace-task' );
 
 
 /**
  * Dev Tasks
  */
+
+// Update Version
+gulp.task( 'updateVersion', function() {
+	return gulp.src( filesversions )
+	.pipe( replace( {
+		patterns: [
+			{
+				match: /Version: (\d+\.+\d+\.+\d)/,
+				replacement: 'Version: ' + version
+			},
+            {
+				match: /Stable tag: (\d+\.+\d+\.+\d)/,
+				replacement: 'Stable tag: ' + version
+			}
+		],
+		usePrefix: false
+	} ) )
+	.pipe( gulp.dest( './' ) );
+});
+
 // JS lint
 gulp.task('jslint', function() {
     return gulp.src( scriptsjs )
@@ -113,6 +154,7 @@ gulp.task('build', gulp.series(
     'build-clean',
     'minifycss',
     'minifyjs',
+    'updateVersion',
     'build-clean-and-copy',
     'build-zip-and-clean',
     'build-notification' ),
