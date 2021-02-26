@@ -211,3 +211,7 @@ GNU General Public License for more details.
 * Name: fog-landscape.jpg
     * URL: https://pickupimage.com/download-photos/Tundra-Wilderness-Alaska/2324539
     * License: CC0 1.0 Universal (CC0 1.0)
+
+* Name: loader-blue.gif
+  * self-made picture by @triopsi
+  * License: CC0 1.0 Universal (CC0 1.0)
