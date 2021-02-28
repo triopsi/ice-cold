@@ -43,6 +43,11 @@ Developed by [Triopsi](https://wiki.profoxi.de)
 
 == Changelog ==
 
+= 1.0.5 =
+
+* esc_attr echo fix
+* Fix esc output/link breadcrumb
+
 = 1.0.4 =
 
 * Fix readme and style.css head

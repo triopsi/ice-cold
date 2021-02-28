@@ -36,7 +36,7 @@ get_header();
 <main role="main" class="site-main-page">
 	<div class="container">
 		<div id="primary" class="content-area row">
-			<main id="main" class="site-main col-md-<?php echo ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8'; ?>" role="main">
+			<main id="main" class="site-main col-md-<?php echo esc_attr( ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8' ); ?>" role="main">
 				<?php
 				// check posts exists.
 				if ( have_posts() ) {

@@ -39,7 +39,7 @@ get_header();
 			<div class="col-md-12">
 				<?php wpicecold_get_breadcrumb(); ?>
 			</div>
-			<div class="col-md-<?php echo ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8'; ?>">
+			<div class="col-md-<?php echo esc_attr( ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8' ); ?>">
 			<?php
 			while ( have_posts() ) :
 				the_post();

@@ -42,7 +42,7 @@ switch ( get_theme_mod( 'colorscheme', 'white' ) ) {
 }
 ?>
 <!-- Main Menu -->
-<nav id="site-navigation" class="navbar-main navbar <?php echo esc_html( $header_placing ); ?> navbar-expand-lg <?php echo esc_html( $color_shema ); ?> ">
+<nav id="site-navigation" class="navbar-main navbar <?php echo esc_attr( $header_placing ); ?> navbar-expand-lg <?php echo esc_attr( $color_shema ); ?> ">
 	<div class="container">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'ice-cold' ); ?></span>  

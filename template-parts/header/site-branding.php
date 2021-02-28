@@ -59,7 +59,7 @@
 <?php if ( is_home() || is_front_page() ) : ?>
 <!-- Start slide-down-pl -->
 <div class="slide-down-pl">
-	<a href="#<?php echo esc_html( ( is_home() ) ? 'main' : 'frontPost-' . get_option( 'page_on_front' ) ); ?>"><i class="fas fa-chevron-down animate__animated animate__infinite animate__pulse"></i></a>
+	<a href="#<?php echo esc_attr( ( is_home() ) ? 'main' : 'frontPost-' . get_option( 'page_on_front' ) ); ?>"><i class="fas fa-chevron-down animate__animated animate__infinite animate__pulse"></i></a>
 </div>
 <!-- End slide-down-pl -->
 <?php endif; ?>

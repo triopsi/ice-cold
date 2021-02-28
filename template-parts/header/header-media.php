@@ -30,7 +30,7 @@
 <div class="custom-header">
 	<div class="grid-mask"></div>
 	<div class="header-background-overlay"></div>
-	<div class="custom-header-media" style="filter: blur(<?php echo esc_html( get_theme_mod( 'page_header_blur', '0' ) ); ?>px);">
+	<div class="custom-header-media" style="filter: blur(<?php echo esc_attr( get_theme_mod( 'page_header_blur', '0' ) ); ?>px);">
 	<?php
 	// Page and have a thunbnail image.
 	if ( is_page() && ! is_front_page() && get_the_post_thumbnail_url() ) {

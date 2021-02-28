@@ -85,31 +85,31 @@ function wpicecold_get_breadcrumb() {
 
 				// get category link.
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo $defaults['before'] . single_cat_title( '', false ) . $defaults['after'];
+				echo $defaults['before'] . esc_html( single_cat_title( '', false ) ) . $defaults['after'];
 
 			} elseif ( is_day() ) {
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a>' . $defaults['delimiter'] . '';
+				echo '<a href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '">' . esc_html( get_the_time( 'Y' ) ) . '</a>' . $defaults['delimiter'] . '';
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo '<a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '">' . get_the_time( 'F' ) . '</a>' . $defaults['delimiter'] . '';
+				echo '<a href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '">' . esc_html( get_the_time( 'F' ) ) . '</a>' . $defaults['delimiter'] . '';
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo $defaults['before'] . get_the_time( 'd' ) . $defaults['after'];
+				echo $defaults['before'] . esc_html( get_the_time( 'd' ) ) . $defaults['after'];
 
 			} elseif ( is_month() ) {
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a>' . $defaults['delimiter'] . '';
+				echo '<a href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '">' . esc_html( get_the_time( 'Y' ) ) . '</a>' . $defaults['delimiter'] . '';
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo $defaults['before'] . get_the_time( 'F' ) . $defaults['after'];
+				echo $defaults['before'] . esc_html( get_the_time( 'F' ) ) . $defaults['after'];
 
 			} elseif ( is_year() ) {
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo $defaults['before'] . get_the_time( 'Y' ) . $defaults['after'];
+				echo $defaults['before'] . esc_html( get_the_time( 'Y' ) ) . $defaults['after'];
 
 			} elseif ( is_single() && ! is_attachment() ) {
 				if ( get_post_type() !== 'post' ) {
@@ -156,7 +156,7 @@ function wpicecold_get_breadcrumb() {
 				echo esc_html( get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' ) );
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				echo '<a href="' . get_permalink( $parent ) . '">' . $parent->post_title . '</a>' . $defaults['delimiter'] . '';
+				echo '<a href="' . esc_url( get_permalink( $parent ) ) . '">' . $parent->post_title . '</a>' . $defaults['delimiter'] . '';
 
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				echo $defaults['before'] . esc_html( get_the_title() ) . $defaults['after'];
@@ -176,7 +176,7 @@ function wpicecold_get_breadcrumb() {
 
 					$page = get_post( $parent_id );
 
-					$breadcrumbs[] = '<a href="' . get_permalink( $page->ID ) . '">' . get_the_title( $page->ID ) . '</a>';
+					$breadcrumbs[] = '<a href="' . esc_url( get_permalink( $page->ID ) ) . '">' . esc_html( get_the_title( $page->ID ) ) . '</a>';
 
 					$parent_id = $page->post_parent;
 				}

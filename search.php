@@ -38,7 +38,7 @@ get_header();
 			<div class="col-md-12">
 				<?php wpicecold_get_breadcrumb(); ?>
 			</div>
-			<section class="search-site site-main col-md-<?php echo ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8'; ?>">
+			<section class="search-site site-main col-md-<?php echo esc_attr( ( 'one-column' === get_theme_mod( 'page_layout_blog_site', 'two-column' ) ) ? '12' : '8' ); ?>">
 				<div class="page-content">
 					<header class="page-header">
 						<?php if ( have_posts() ) : ?>
