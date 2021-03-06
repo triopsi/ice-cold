@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/triopsi
 Tested up to: 5.6.1
 Requires at least: 5.0
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/license-list.html#GPLv2
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio, e-commerce
@@ -42,6 +42,10 @@ Installation using ''Add New Theme''
 Developed by [Triopsi](https://wiki.profoxi.de)
 
 == Changelog ==
+
+= 1.0.7 =
+
+* FIX Breadcrumb function
 
 = 1.0.6 =
 
