@@ -105,7 +105,8 @@ body{
     width: 100%;
 }
 
-.wpicecold-front-image-full-size.has-header-image .custom-header-media img{
+.wpicecold-front-page-blog.has-header-image .custom-header-media img,
+.wpicecold-front-page.has-header-image .custom-header-media img{
     height: 100%;
 }
 

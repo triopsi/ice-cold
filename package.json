@@ -10,7 +10,7 @@
   "author": "",
   "author_uri": "https://wiki.profoxi.de",
   "license": "ISC",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Eine einfache und responsive Mastervorlage für schlanke designs.",
   "main": "index.js",
   "scripts": {

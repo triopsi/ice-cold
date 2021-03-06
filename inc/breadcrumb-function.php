@@ -43,7 +43,7 @@ function wpicecold_get_breadcrumb() {
 	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	$defaults['after'] = '';
 
-	if ( wpicecold_is_woocommerce_activated() ) {
+	if ( ! wpicecold_is_woocommerce_activated() ) {
 
 		woocommerce_breadcrumb( $defaults );
 
@@ -131,7 +131,7 @@ function wpicecold_get_breadcrumb() {
 					$cat = $cat[0];
 
 					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo esc_html( get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' ) );
+					echo get_category_parents( $cat, true, '' . $defaults['delimiter'] . '' );
 
 					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					echo $defaults['before'] . esc_html( get_the_title() ) . $defaults['after'];
