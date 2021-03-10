@@ -1,12 +1,12 @@
 === Ice Cold ===
 Contributors: triopsi
 Donate link: https://www.paypal.me/triopsi
-Tested up to: 5.6.1
+Tested up to: 5.7
 Requires at least: 5.0
 Requires PHP: 5.6
-Stable tag: 1.0.7
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/license-list.html#GPLv2
+Stable tag: 1.0.8
+License: GPL-3.0-or-later
+License URI: https://www.gnu.org/licenses/license-list.html#GNUGPLv3
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio, e-commerce
 
 == Description ==
@@ -35,13 +35,18 @@ Installation using ''Add New Theme''
 = Does this theme support any plugins? =
 
 * Supports Contact Form 7
-* WooCommerce
+* WooCommerce v5.0.0
 
 == Credits ==
 
 Developed by [Triopsi](https://wiki.profoxi.de)
 
 == Changelog ==
+
+= 1.0.8 =
+
+* FIX focus elements comment form and the burger button
+* FIX navigation focus on mobile version
 
 = 1.0.7 =
 
@@ -92,7 +97,7 @@ If you like the plugin, consider a donation to support further development. [Cli
 
 == Copyright & License Notes ==
 
-Ice Cold WordPress Theme, Copyright 2020 Triopsi
+Ice Cold WordPress Theme, Copyright 2021 Triopsi
 Ice Cold is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify

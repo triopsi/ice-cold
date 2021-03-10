@@ -13,10 +13,10 @@ Contributors:      | [triopsi](https://profiles.wordpress.org/triopsi/)
 Donate link:       | :heart: [PayPal Donate](https://www.paypal.me/triopsi) 
 Version:           | [![Version](https://img.shields.io/github/v/release/triopsi/ice-cold)](https://github.com/triopsi/ice-cold/releases)
 Requires at least: | 5.3
-Tested up to:      | 5.6.1
+Tested up to:      | 5.7
 Requires PHP:	   | 5.6
-License:           | [![GPLv2 or later](https://img.shields.io/badge/Licence-GPLv2_or_later-f39f37)](https://www.gnu.org/licenses/license-list.html#GPLv2)
-License URI:       | https://www.gnu.org/licenses/license-list.html#GPLv2
+License:           | [![GPLv3 or later](https://img.shields.io/badge/Licence-GPLv2_or_later-f39f37)](https://www.gnu.org/licenses/license-list.html#GNUGPLv3)
+License URI:       | https://www.gnu.org/licenses/license-list.html#GNUGPLv3
 Tags:              | one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, featured-images, custom-menu, custom-logo, editor-style, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio, e-commerce
 Status             | [![Build Status](https://jenkins.cloudfoxi.de/buildStatus/icon?job=Deploy-Ice-Cold-Theme)](https://jenkins.cloudfoxi.de/job/Deploy-Ice-Cold-Theme/)
 Checks              |[![Required](https://img.shields.io/badge/WPThemeReview-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Core](https://img.shields.io/badge/WordPress_Core-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Extra](https://img.shields.io/badge/WordPress_Extra-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/) [![WP Docs](https://img.shields.io/badge/WordPress_Docs-Pass-brightgreen)](https://make.wordpress.org/themes/handbook/review/required/)
@@ -100,7 +100,7 @@ gulp build
 ## Does this theme support any plugins?
 
 * Supports Contact Form 7
-* WooCommerce
+* WooCommerce v5.0.0
 
 # Credits
 
@@ -117,6 +117,21 @@ There are various ways you can contribute:
 3. Provide feedback and suggestions on enhancements
 
 # Changelog 
+
+
+## 1.0.8
+
+* FIX focus elements comment form and the burger button
+* FIX navigation focus on mobile version
+
+## 1.0.7
+
+* FIX Breadcrumb function
+
+## 1.0.6
+
+* FIX frontpage full image size
+* Tested WP 5.7
 
 ## 1.0.5
 
@@ -158,7 +173,7 @@ If you like the plugin, consider a donation to support further development. [Cli
 
 # Copyright & License Notes
 
-Ice Cold WordPress Theme, Copyright 2020 Triopsi
+Ice Cold WordPress Theme, Copyright 2021 Triopsi
 Ice Cold is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -218,9 +233,9 @@ GNU General Public License for more details.
     * License: CC0 1.0 Universal (CC0 1.0)
 
 * Name: loader-blue.gif
-  * self-made picture by @triopsi
-  * License: CC0 1.0 Universal (CC0 1.0)
+    * self-made picture by @triopsi
+    * License: CC0 1.0 Universal (CC0 1.0)
 
 * Name: grid-mask.png
-  * self-made picture by @triopsi
-  * License: CC0 1.0 Universal (CC0 1.0)
+    * self-made picture by @triopsi
+    * License: CC0 1.0 Universal (CC0 1.0)

@@ -75,7 +75,7 @@
 	<?php
 	if ( ! is_single() ) {
 		if ( 'yes' === get_theme_mod( 'post_show_the_excerpt', 'yes' ) ) {
-				the_excerpt();
+			the_excerpt();
 		} else {
 			the_content(
 				sprintf(

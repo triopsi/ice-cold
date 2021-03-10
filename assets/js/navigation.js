@@ -8,7 +8,7 @@
 
     // add submenu dropdown Toggle button.
     if( $( '.main-menu li.menu-item-has-children ul' ).length ){
-        $( '.main-menu li.menu-item-has-children' ).append( '<div class="dropdown-btn"><Span class="fa fa-angle-down"></span></div>' );
+        $( '.main-menu li.menu-item-has-children' ).append( '<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>' );
 
         // Dropdown submenue mobile.
         // Click on btn element.

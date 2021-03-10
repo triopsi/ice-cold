@@ -34,21 +34,21 @@
 /*--------------------------------------------------------------
 01 Defaults 1
 --------------------------------------------------------------*/
-* {margin:0px; padding:0px}
+* {
+    margin:0px;
+    padding:0px
+}
+
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
+
 body{
     padding: 0;
     font-family: 'Open Sans', Helvetica Neue, Sans-serif;
-    /* line-height: 25px;
-    font-weight: 400; */
     color: #313131;
-    /* text-align: left;
-    overflow-x: hidden !important;
-    margin: auto !important;
-    font-size: 15px; */
 }
+
 /*--------------------------------------------------------------
 02 Top Header
 --------------------------------------------------------------*/
@@ -176,9 +176,9 @@ a:link{
     transition: color 110ms ease-in;
 }
 table a:hover, 
-table a:focus, 
+table a:focus,  
 a:hover, 
-a:focus, 
+a:focus,
 dl dd a:hover, 
 dl dd a:focus {
     cursor: pointer;
@@ -188,6 +188,19 @@ dl dd a:focus {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
+
+article a:link,
+h3.entry-title a:focus,
+h3.entry-title a:hover{
+    text-decoration: underline;
+}
+
+article a:hover, 
+article a:focus,
+h3.entry-title a{
+    text-decoration: none;
+}
+
 
 .site-description{
     margin-bottom: 0;
@@ -413,7 +426,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .navbar-nav > li > ul > li > ul > li > a {
     position: relative;
     display: block;
-    padding: 15px 10px;
+    padding: 5px 5px;
     line-height: 24px;
     font-weight: 600;
     font-size: 0.9em;
@@ -424,6 +437,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
+    margin: 10px 10px;
 }
 
 .menu-item-has-children .sub-menu li a:hover {
@@ -534,12 +548,14 @@ body:not(.title-tagline-hidden) .site-branding-text {
         background: #e5e5e5;
         text-align: left;
         width: 100%;
+        margin: 0;
     }
 
     .navbar-collapse .navbar-nav > li > a:hover,
     .navbar-collapse .navbar-nav > li > a:active,
     .navbar-collapse .navbar-nav > li > a:focus {
         background: #186ca0;
+        color: #ffffff !important;
     }
 
     .navbar-collapse .navbar-nav > li:hover > a,
@@ -677,9 +693,7 @@ var {
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
-:focus {
-    outline: none;
-}
+
 img,
 video {
 	height: auto; /* Make sure images are scaled correctly. */
@@ -1446,6 +1460,25 @@ input[type="text"].wpcf7-not-valid,
     border: 1px solid#f00;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+input[type="checkbox"]:focus,
+textarea:focus {
+    border-color: currentColor;
+}
+
 /*--------------------------------------------------------------
 12 Posts Content
 --------------------------------------------------------------*/
@@ -1937,7 +1970,7 @@ a.comment-reply-link{
 }
 
 .comment-content a:focus{
-    text-decoration: underline;
+    text-decoration: none;
 }
 .comment-content address{
     font-weight: 600;
@@ -2195,7 +2228,7 @@ a.more-link:focus{
     transition: opacity 0.2s;
 }
 a.more-link:focus{
-    text-decoration: underline;
+    text-decoration: none;
 }
 .recent-posts .post{
     border-bottom: 1px dotted #c5d1dc;
