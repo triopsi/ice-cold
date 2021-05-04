@@ -118,6 +118,9 @@ There are various ways you can contribute:
 
 # Changelog 
 
+## 1.0.9
+
+* FIX Navigation Parent Link Bug Github #2
 
 ## 1.0.8
 
